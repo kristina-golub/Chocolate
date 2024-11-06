@@ -23,8 +23,10 @@
         <nav class="header-navigation">
           <a class="header-logo" href="/index.html">
             <span class="header-logo-accent">SIMPLY</span> CHOCOLATE
-            <img src="./images/chocolate.svg" alt="chocolate icon" />
           </a>
+          <svg class="logo-icon" height="22" width="21">
+            <use href="./images/symbol.svg#icon-chocolate"></use>
+          </svg>
           <ul class="header-menu">
             <li class="header-menu-link">
               <a class="header-menu-item active" href="">Home</a>
@@ -36,34 +38,72 @@
               <a class="header-menu-item" href="">Chocolate is loved</a>
             </li>
           </ul>
-          <ul class="header-soc-list">
-            <li class="header-soc-item">
-              <a
-                class="header-soc-link"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="header-soc-icon" width="24" height="24">
-                  <use href="./images/symbol.svg#icon-instagram-choco"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="header-soc-item">
-              <a
-                class="header-soc-link"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="header-soc-icon" width="24" height="24">
-                  <use href="./images/symbol.svg#icon-twitter-choco"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
         </nav>
-      </div>
+        <ul class="header-soc-list">
+          <li class="header-soc-item">
+            <a
+              class="header-soc-link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="header-soc-icon" width="24" height="24">
+                <use href="./images/symbol.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header-soc-item">
+            <a
+              class="header-soc-link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="header-soc-icon" width="24" height="24">
+                <use href="./images/symbol.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <button class="burger-btn" type="button">
+          <svg class="icon-burger-btn" height="28" width="28">
+            <use href="./images/symbol.svg#icon-burger-btn"></use>
+          </svg>
+        </button>
+        </div>
+        <div class="mobile-backdrop">
+          <button class="mobile-menu-close" type="button">
+            <svg class="mobile-menu-close-icon" width="14" height="14">
+              <use href="./images/symbol.svg#icon-closed"></use>
+            </svg>
+          </button>
+
+            <ul class="mobile-menu-soc-list">
+              <li class="mobile-menu-soc-item">
+                <svg class="header-soc-icon" width="24" height="24">
+                  <use href="./images/symbol.svg#icon-twitter"></use>
+                </svg>
+              </li>
+              <li class="mobile-menu-soc-item">
+                <svg class="header-soc-icon" width="24" height="24">
+                  <use href="./images/symbol.svg#icon-instagram"></use>
+                </svg>
+              </li>
+            </ul>
+          <div class="container mobile-menu">
+            <nav class="mobile-navigation">
+              <ul class="mobile-menu-list">
+                <li class="mobile-menu-item">
+                  <a href="./index.html" class="mobile-menu-link current">Home</a>
+                </li>
+                <li class="mobile-menu-item">
+                  <a href="./index.html" class="mobile-menu-link">How it’s made?</a></li>
+                <li class="mobile-menu-item">
+                   <a href="./index.html" class="mobile-menu-link">Chocolate is loved</a></li>
+              </ul>
+            /<nav>
+          </div>
+        </div>
     </header>
     <main>
       <section class="hero-section">
@@ -135,7 +175,9 @@
                 width="206"
                 height="160"
               />
-              <div class="cover-ingridients">
+             
+                <h3 class="taste-subtitle">MILK CHOCOLATE</h3>
+                 <div class="cover-ingridients">
                 <h2 class="taste-cover-title">Milk chocolate</h2>
                 <button class="taste-cover-button-first" type="button">
                   chocolate
@@ -150,7 +192,6 @@
                   beverage in pre-Columbian times. Although four-fifths of all
                   milk chocolate is sold in the United States and Europe.
                 </p>
-                <h3 class="taste-subtitle">MILK CHOCOLATE</h3>
               </div>
             </li>
             <li class="taste-list">
@@ -187,7 +228,7 @@
         </div>
       </section>
 
-      <section class="made" id="made">
+      <section class="made hidden" id="made">
         <div class="container">
           <h2 class="made-title">
             How it’s <span class="made-accent">made</span>?
@@ -321,7 +362,7 @@
           </ul>
         </div>
       </section>
-      <section class="review-section">
+      <section class="review-section hidden">
         <div class="container">
           <h2 class="review-title">
             <span class="chocolate-accent">Chocolate</span> is loved
@@ -377,7 +418,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer hidden">
       <div class="container">
         <div class="footer-top">
           <p class="footer-title">
@@ -435,7 +476,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop hidden">
       <div class="modal"></div>
     </div>
   </body>
