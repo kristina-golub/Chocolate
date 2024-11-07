@@ -228,18 +228,35 @@
         </div>
       </section>
 
-      <section class="made hidden" id="made">
+      <section class="made" id="made">
         <div class="container">
           <h2 class="made-title">
             How it’s <span class="made-accent">made</span>?
           </h2>
           <div class="made-wrapper">
-            <img
-              src="./images/made-section.jpg"
-              alt="chocolate making process"
-              width="600"
-              height="400"
-            />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/made-section.jpg 1x"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/made-tab.jpg 1x"
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/made-mob.jpg 1x"
+                    media="(max-width:767px)"
+                  />
+
+                  <img
+                    src="./images/made-mob.jpg"
+                    alt="chocolate"
+                  />
+                </picture>
+           
             <div class="made-content">
               <h3 class="made-subtitle">
                 Try our chocolates today and discover the perfect balance of
@@ -362,7 +379,7 @@
           </ul>
         </div>
       </section>
-      <section class="review-section hidden">
+      <section class="review-section">
         <div class="container">
           <h2 class="review-title">
             <span class="chocolate-accent">Chocolate</span> is loved
