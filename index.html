@@ -48,7 +48,7 @@
               rel="noopener noreferrer"
             >
               <svg class="header-soc-icon" width="24" height="24">
-                <use href="./images/symbol.svg#icon-instagram"></use>
+                <use href="./images/symbol.svg#icon-instagram-one"></use>
               </svg>
             </a>
           </li>
@@ -60,7 +60,7 @@
               rel="noopener noreferrer"
             >
               <svg class="header-soc-icon" width="24" height="24">
-                <use href="./images/symbol.svg#icon-twitter"></use>
+                <use href="./images/symbol.svg#icon-twitter-one"></use>
               </svg>
             </a>
           </li>
@@ -114,8 +114,13 @@
           </h1>
           <div class="hero-buttons-container">
             <button class="hero-section-button" type="button">Buy now</button>
-            <a class="hero-section-made-button" href="#made">How it's made</a>
-            <a class="hero-section-scroll" href="">scroll down</a>
+            <a class="hero-section-made-button">How it's made</a>
+            <a class="hero-section-scroll" href="#made">scroll down</a>
+            <a class="hero-scroll-icon" href="#made">
+              <svg class="hero-scroll" width="14" height="8">
+                <use href="./images/symbol.svg#icon-scroll"></use>
+              </svg>
+            </a>
           </div>
         </div>
       </section>
@@ -124,6 +129,11 @@
           <h2 hidden>Advantages</h2>
           <ul class="advantages-list">
             <li class="advantages-item">
+             <div class="adv-icon-section">
+                <svg class="adv-icon" width="32" height="32">
+                  <use href="./images/symbol.svg#icon-chocolate-bar"></use>
+                  </svg>
+             </div>
               <h3 class="advantages-subtitle">Unsurpassed taste</h3>
               <p class="advantages-descr">
                 Crafted with the finest quality cocoa beans and a dedication to
@@ -133,6 +143,11 @@
               </p>
             </li>
             <li class="advantages-item">
+              <div class="adv-icon-section">
+                <svg class="adv-icon" width="32" height="32">
+                  <use href="./images/symbol.svg#icon-Coin"></use>
+                  </svg>
+             </div>
               <h3 class="advantages-subtitle">Affordable price</h3>
               <p class="advantages-descr">
                 Indulge in high-quality chocolate without breaking the bank with
@@ -143,6 +158,11 @@
               </p>
             </li>
             <li class="advantages-item">
+              <div class="adv-icon-section">
+                <svg class="adv-icon" width="32" height="32">
+                  <use href="./images/symbol.svg#icon-spoon"></use>
+                  </svg>
+             </div>
               <h3 class="advantages-subtitle">Own production</h3>
               <p class="advantages-descr">
                 We take pride in our own production process, ensuring that every
@@ -435,7 +455,7 @@
       </section>
     </main>
 
-    <footer class="footer hidden">
+    <footer class="footer">
       <div class="container">
         <div class="footer-top">
           <p class="footer-title">
@@ -493,8 +513,34 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop hidden">
-      <div class="modal"></div>
+    <div class="backdrop is-open">
+      <div class="modal">
+              <button class="modal-close-btn">
+        <svg class="modal-close-icon" width="16" height="16">
+          <use href="./images/symbol.svg#icon-closed"></use>
+        </svg>
+      </button>
+        <h2 class="modal-title">LEAVE A REVIEW ABOUT <span>OUR CHOCOLATE</span></h2>
+        <form class="modal-form">
+          <div class="modal-input-label">
+            <label for="user-name" class="modal-label">Name</label>
+              <input type="text" id="user-name" class="modal-field" name="username">
+          </div>
+          <div class="modal-input-label">
+            <label for="user-email" class="modal-label">Email</label>
+              <input type="email" id="user-email" class="modal-field" name="useremail">
+          </div>
+          <div class="modal-input-label">
+            <label for="user-phone" class="modal-label">Phone number</label>
+             <input type="tel" id="user-phone" class="modal-field" name="userphone">
+          </div>
+          <div class="modal-input-label">
+             <label for="user-comment" class="modal-label"></label>
+             <textarea name="comment" id="user-comment" class="modal-textarea" placeholder="Enter text"></textarea>
+          </div>
+          <button type="submit" class="modal-send-btn">Send</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
