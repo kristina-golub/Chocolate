@@ -965,6 +965,9 @@ p {
 }
 .modal {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: #fafafa;
   border-radius: 15px;
   max-width: 517px;
@@ -992,41 +995,118 @@ p {
   color: #fd9222;
 }
 .modal-form {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+}
+.icon-wrapper {
+  position: relative;
+}
+.modal-input-icon {
+  position: absolute;
+  bottom: 50%;
+  transform: translateY(50%);
+  transition: stroke var(--cubic);
+  left: 24px;
+  fill: #404040;
 }
 .modal-input-label {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+  margin-bottom: 18px;
 }
 .modal-label {
-  font-weight: 400;
   font-size: 14px;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.3);
+  display: block;
+  margin-bottom: 8px;
 }
 .modal-field {
-  width: 437px;
-  height: 68px;
+  width: 100%;
   border: 1px solid rgba(17, 17, 17, 0.05);
   border-radius: 13px;
-  padding: 22px 24px;
+  padding-left: 62px;
+  height: 68px;
+  background-color: transparent;
+  outline: transparent;
+}
+.modal-field:focus {
+  border-color: #fd9222;
+}
+.modal-field:focus + .modal-input-icon {
+  fill: #fd9222;
 }
 .modal-textarea {
   border: 1px solid rgba(17, 17, 17, 0.05);
   border-radius: 13px;
-  padding: 22px 24px 93px 24px;
-  width: 436px;
+  padding: 22px 24px;
+  width: 437px;
   height: 137px;
+  background-color: transparent;
   resize: none;
+  margin-bottom: 20px;
+  outline: none;
+}
+.modal-textarea:focus {
+  border-color: #fd9222;
 }
 textarea::placeholder {
   font-size: 18px;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.3);
 }
+.pp-container {
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* розібратися */
+.custom-checkbox {
+  fill: transparent;
+  border-radius: 6px;
+  border: 1px solid rgba(17, 17, 17, 0.14);
+  margin-right: 12px;
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+input:checked + label > span {
+  background-color: #fd9222;
+  fill: #f4f4fd;
+  border: none;
+}
+.checkbox-label {
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.6);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.checkbox:checked + .checkbox-label .custom-checkbox {
+  background-color: #fd9222;
+  border: none;
+  fill: #ffffff;
+}
+/* Розібратися */
+.pp-link {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #fd9222;
+}
+
 .modal-send-btn {
   background-color: #fd9222;
   font-weight: 600;
@@ -1039,5 +1119,5 @@ textarea::placeholder {
   max-width: 117px;
   height: 45px;
   border: none;
-  margin-top: 78px;
+  margin-top: 40px;
 }

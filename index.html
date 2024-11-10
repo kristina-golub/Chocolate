@@ -524,19 +524,48 @@
         <form class="modal-form">
           <div class="modal-input-label">
             <label for="user-name" class="modal-label">Name</label>
-              <input type="text" id="user-name" class="modal-field" name="username">
+              <div class="icon-wrapper">
+                <input type="text" id="user-name" class="modal-field" name="username">
+                <svg class="modal-input-icon" width="16" height="16">
+                  <use href="./images/symbol.svg#icon-name"></use>
+                </svg>
+              </div>
           </div>
           <div class="modal-input-label">
             <label for="user-email" class="modal-label">Email</label>
-              <input type="email" id="user-email" class="modal-field" name="useremail">
+              <div class="icon-wrapper">
+                <input type="email" id="user-email" class="modal-field" name="useremail">
+                <svg class="modal-input-icon" width="16" height="16">
+                  <use href="./images/symbol.svg#icon-email"></use>
+                </svg>
+              </div>
           </div>
           <div class="modal-input-label">
             <label for="user-phone" class="modal-label">Phone number</label>
-             <input type="tel" id="user-phone" class="modal-field" name="userphone">
+             <div class="icon-wrapper">
+              <input type="tel" id="user-phone" class="modal-field" name="userphone">
+              <svg class="modal-input-icon" width="16" height="16">
+                <use href="./images/symbol.svg#icon-phone"></use>
+              </svg>
+            </div>
           </div>
           <div class="modal-input-label">
              <label for="user-comment" class="modal-label"></label>
-             <textarea name="comment" id="user-comment" class="modal-textarea" placeholder="Enter text"></textarea>
+
+              <textarea name="comment" id="user-comment" class="modal-textarea" placeholder="Enter text"></textarea>
+
+          </div>
+          <div class="modal-input-label">
+            <input type="checkbox" name="user-pp" id="user-p-policy" class="checkbox visually-hidden" value="true">    
+          <label class="checkbox-label" for="user-p-policy">
+            <span class="custom-checkbox">
+              <svg class="checkbox-icon" width="10" height="10">
+                <use href="./images/symbol.svg#icon-checked"></use>
+              </svg>
+            </span>
+            I accept the terms and conditions of the 
+            <a class="pp-link" href=""> Privacy Policy</a>
+          </label>
           </div>
           <button type="submit" class="modal-send-btn">Send</button>
         </form>
