@@ -227,11 +227,7 @@ p {
     display: flex;
     gap: 18px;
   }
-  .header-soc-icon {
-    fill: transparent;
-    stroke-width: 2px;
-    stroke: #111;
-  }
+
   .header-soc-link {
     width: 44px;
     height: 44px;
@@ -242,15 +238,19 @@ p {
     justify-content: center;
     transition: background-color 250ms ease, border 250ms ease;
   }
+  .header-soc-icon {
+    stroke: #111;
+    fill: transparent;
+  }
   .header-soc-link:hover {
     background-color: #fff;
     border: 1px solid #fd9222;
-    border-radius: 100px;
   }
   .header-soc-link:hover .header-soc-icon {
     stroke: #fd9222;
   }
 }
+
 .hero-section {
   background-color: #1e1823;
   background-image: linear-gradient(
@@ -982,8 +982,8 @@ backdrop:not(.is-open) .modal {
   position: absolute;
   width: 28px;
   height: 28px;
-  top: 24px;
-  right: 24px;
+  top: 14px;
+  right: 14px;
   background-color: transparent;
   border-radius: 50%;
   border: none;
@@ -991,9 +991,6 @@ backdrop:not(.is-open) .modal {
   align-items: center;
   justify-content: center;
   transition: background-color 250ms ease-in-out, border 250ms ease-in-out;
-}
-.header-soc-icon {
-  fill: #111;
 }
 .modal-close-btn:hover {
   background-color: transparent;
