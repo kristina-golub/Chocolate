@@ -970,32 +970,31 @@ p {
   transform: translate(-50%, -50%);
   background-color: #fafafa;
   border-radius: 15px;
-  max-width: 517px;
-  height: 794px;
-  padding: 40px;
+  max-width: 311px;
+  height: 619px;
+  padding: 32px;
 }
 .modal-close-btn {
   position: absolute;
-  top: 24px;
-  right: 24px;
+  top: 14px;
+  right: 14px;
   border: none;
   background-color: transparent;
 }
 .modal-title {
-  max-width: 298px;
+  max-width: 255px;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.16667;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: #111;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 .modal-title span {
   color: #fd9222;
 }
-.modal-form {
-}
+
 .icon-wrapper {
   position: relative;
 }
@@ -1004,25 +1003,25 @@ p {
   bottom: 50%;
   transform: translateY(50%);
   transition: stroke var(--cubic);
-  left: 24px;
+  left: 14px;
   fill: #404040;
 }
 .modal-input-label {
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 .modal-label {
-  font-size: 14px;
+  font-size: 13px;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.3);
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 .modal-field {
   width: 100%;
   border: 1px solid rgba(17, 17, 17, 0.05);
   border-radius: 13px;
-  padding-left: 62px;
-  height: 68px;
+  padding-left: 43px;
+  height: 45px;
   background-color: transparent;
   outline: transparent;
 }
@@ -1035,24 +1034,23 @@ p {
 .modal-textarea {
   border: 1px solid rgba(17, 17, 17, 0.05);
   border-radius: 13px;
-  padding: 22px 24px;
-  width: 437px;
-  height: 137px;
+  padding: 14px 18px;
+  width: 263px;
+  height: 91px;
   background-color: transparent;
   resize: none;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   outline: none;
 }
 .modal-textarea:focus {
   border-color: #fd9222;
 }
 textarea::placeholder {
-  font-size: 18px;
+  font-size: 14px;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.3);
 }
-.pp-container {
-}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -1065,7 +1063,6 @@ textarea::placeholder {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-/* розібратися */
 .custom-checkbox {
   fill: transparent;
   border-radius: 6px;
@@ -1088,10 +1085,10 @@ input:checked + label > span {
   border: none;
 }
 .checkbox-label {
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.6);
-  display: flex;
+  display: block;
   align-items: center;
   position: relative;
 }
@@ -1100,11 +1097,12 @@ input:checked + label > span {
   border: none;
   fill: #ffffff;
 }
-/* Розібратися */
+
 .pp-link {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #fd9222;
+  margin-left: 4px;
 }
 
 .modal-send-btn {
@@ -1115,9 +1113,63 @@ input:checked + label > span {
   display: block;
   margin: 0 auto;
   border-radius: 100px;
-  padding: 14px 40px;
-  max-width: 117px;
-  height: 45px;
+  padding: 12px 28px;
+  max-width: 93px;
+  height: 41px;
   border: none;
-  margin-top: 40px;
+  margin-top: 32px;
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fafafa;
+    border-radius: 15px;
+    max-width: 517px;
+    height: 794px;
+    padding: 40px;
+  }
+  .modal-close-btn {
+    top: 24px;
+    right: 24px;
+  }
+  .modal-title {
+    max-width: 298px;
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  .modal-input-icon {
+    left: 24px;
+  }
+  .modal-input-label {
+    margin-bottom: 18px;
+  }
+  .modal-label {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  .modal-field {
+    padding-left: 62px;
+    height: 68px;
+  }
+  .modal-textarea {
+    padding: 22px 24px;
+    width: 437px;
+    height: 137px;
+    margin-bottom: 20px;
+  }
+  textarea::placeholder {
+    font-size: 18px;
+  }
+  .checkbox-label {
+    font-size: 14px;
+  }
+  .modal-send-btn {
+    padding: 14px 40px;
+    max-width: 117px;
+    height: 45px;
+    margin-top: 40px;
+  }
 }
