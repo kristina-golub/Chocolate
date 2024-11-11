@@ -99,6 +99,7 @@ p {
   visibility: hidden;
   height: 100%;
   width: 100%;
+  z-index: 999;
 }
 .mobile-backdrop.is-open {
   opacity: 1;
@@ -109,9 +110,7 @@ p {
   position: relative;
   padding-top: 72px;
   padding-bottom: 40px;
-
   margin: 0;
-
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -129,15 +128,7 @@ p {
 .mobile-menu-close-icon {
   fill: #fff;
 }
-.mobile-menu-soc-list {
-  display: flex;
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  gap: 18px;
-  border: none;
-  background-color: transparent;
-}
+
 .mobile-menu-link {
   font-weight: 500;
   font-size: 36px;
@@ -153,6 +144,29 @@ p {
 }
 .mobile-menu-item:last-child {
   margin-bottom: 0;
+}
+.mob-menu-link {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+.mob-soc-list {
+  display: flex;
+  gap: 18px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+.mob-soc-item {
+  display: flex;
+}
+.mob-soc-link {
+}
+.mob-soc-icon {
+  fill: transparent;
+  stroke: #ffffff;
 }
 
 @media screen and (min-width: 768px) {

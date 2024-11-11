@@ -70,40 +70,59 @@
             <use href="./images/symbol.svg#icon-burger-btn"></use>
           </svg>
         </button>
-        </div>
-        <div class="mobile-backdrop" data-menu>
-          <button class="mobile-menu-close" type="button" data-menu-close>
-            <svg class="mobile-menu-close-icon" width="14" height="14">
-              <use href="./images/symbol.svg#icon-closed"></use>
-            </svg>
-          </button>
-
-            <ul class="mobile-menu-soc-list">
-              <li class="mobile-menu-soc-item">
-                <svg class="header-soc-icon" width="24" height="24">
-                  <use href="./images/symbol.svg#icon-twitter"></use>
-                </svg>
+      </div>
+      <div class="mobile-backdrop" data-menu>
+        <button class="mobile-menu-close" type="button" data-menu-close>
+          <svg class="mobile-menu-close-icon" width="14" height="14">
+            <use href="./images/symbol.svg#icon-closed"></use>
+          </svg>
+        </button>
+        <div class="container mobile-menu">
+          <nav class="mobile-navigation">
+            <ul class="mobile-menu-list">
+              <li class="mobile-menu-item">
+                <a href="./index.html" class="mobile-menu-link current">Home</a>
               </li>
-              <li class="mobile-menu-soc-item">
-                <svg class="header-soc-icon" width="24" height="24">
-                  <use href="./images/symbol.svg#icon-instagram"></use>
-                </svg>
+              <li class="mobile-menu-item">
+                <a href="./index.html" class="mobile-menu-link"
+                  >How it’s made?</a
+                >
+              </li>
+              <li class="mobile-menu-item">
+                <a href="./index.html" class="mobile-menu-link"
+                  >Chocolate is loved</a
+                >
               </li>
             </ul>
-          <div class="container mobile-menu">
-            <nav class="mobile-navigation">
-              <ul class="mobile-menu-list">
-                <li class="mobile-menu-item">
-                  <a href="./index.html" class="mobile-menu-link current">Home</a>
-                </li>
-                <li class="mobile-menu-item">
-                  <a href="./index.html" class="mobile-menu-link">How it’s made?</a></li>
-                <li class="mobile-menu-item">
-                   <a href="./index.html" class="mobile-menu-link">Chocolate is loved</a></li>
-              </ul>
-            <nav>
-          </div>
+          </nav>
+          <ul class="mob-soc-list">
+            <li class="mob-soc-item">
+              <a
+                class="mob-soc-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="mob-soc-icon" width="24" height="24">
+                  <use href="./images/symbol.svg#icon-twitter-one"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item">
+              <a
+                class="mob-soc-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="mob-soc-icon" width="24" height="24">
+                  <use href="./images/symbol.svg#icon-instagram-one"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
+      </div>
     </header>
     <main>
       <section class="hero-section">
@@ -113,7 +132,9 @@
             of pure delight!
           </h1>
           <div class="hero-buttons-container">
-            <button class="hero-section-button" type="button" data-modal-open>Buy now</button>
+            <button class="hero-section-button" type="button" data-modal-open>
+              Buy now
+            </button>
             <a class="hero-section-made-button">How it's made</a>
             <a class="hero-section-scroll" href="#made">scroll down</a>
             <a class="hero-scroll-icon" href="#made">
@@ -129,11 +150,11 @@
           <h2 hidden>Advantages</h2>
           <ul class="advantages-list">
             <li class="advantages-item">
-             <div class="adv-icon-section">
+              <div class="adv-icon-section">
                 <svg class="adv-icon" width="32" height="32">
                   <use href="./images/symbol.svg#icon-chocolate-bar"></use>
-                  </svg>
-             </div>
+                </svg>
+              </div>
               <h3 class="advantages-subtitle">Unsurpassed taste</h3>
               <p class="advantages-descr">
                 Crafted with the finest quality cocoa beans and a dedication to
@@ -146,8 +167,8 @@
               <div class="adv-icon-section">
                 <svg class="adv-icon" width="32" height="32">
                   <use href="./images/symbol.svg#icon-Coin"></use>
-                  </svg>
-             </div>
+                </svg>
+              </div>
               <h3 class="advantages-subtitle">Affordable price</h3>
               <p class="advantages-descr">
                 Indulge in high-quality chocolate without breaking the bank with
@@ -161,8 +182,8 @@
               <div class="adv-icon-section">
                 <svg class="adv-icon" width="32" height="32">
                   <use href="./images/symbol.svg#icon-spoon"></use>
-                  </svg>
-             </div>
+                </svg>
+              </div>
               <h3 class="advantages-subtitle">Own production</h3>
               <p class="advantages-descr">
                 We take pride in our own production process, ensuring that every
@@ -195,9 +216,9 @@
                 width="206"
                 height="160"
               />
-             
-                <h3 class="taste-subtitle">MILK CHOCOLATE</h3>
-                 <div class="cover-ingridients">
+
+              <h3 class="taste-subtitle">MILK CHOCOLATE</h3>
+              <div class="cover-ingridients">
                 <h2 class="taste-cover-title">Milk chocolate</h2>
                 <button class="taste-cover-button-first" type="button">
                   chocolate
@@ -254,29 +275,23 @@
             How it’s <span class="made-accent">made</span>?
           </h2>
           <div class="made-wrapper">
-                <picture>
-                  <source
-                    srcset="
-                      ./images/made-section.jpg 1x"
-                    media="(min-width:1200px)"
-                  />
-                  <source
-                    srcset="
-                      ./images/made-tab.jpg 1x"
-                    media="(min-width:768px)"
-                  />
-                  <source
-                    srcset="
-                      ./images/made-mob.jpg 1x"
-                    media="(max-width:767px)"
-                  />
+            <picture>
+              <source
+                srcset="./images/made-section.jpg 1x"
+                media="(min-width:1200px)"
+              />
+              <source
+                srcset="./images/made-tab.jpg 1x"
+                media="(min-width:768px)"
+              />
+              <source
+                srcset="./images/made-mob.jpg 1x"
+                media="(max-width:767px)"
+              />
 
-                  <img
-                    src="./images/made-mob.jpg"
-                    alt="chocolate"
-                  />
-                </picture>
-           
+              <img src="./images/made-mob.jpg" alt="chocolate" />
+            </picture>
+
             <div class="made-content">
               <h3 class="made-subtitle">
                 Try our chocolates today and discover the perfect balance of
@@ -515,48 +530,75 @@
     </footer>
     <div class="backdrop" data-modal>
       <div class="modal">
-              <button class="modal-close-btn" data-modal-close>
-        <svg class="modal-close-icon" width="16" height="16">
-          <use href="./images/symbol.svg#icon-closed"></use>
-        </svg>
-      </button>
-        <h2 class="modal-title">LEAVE A REVIEW ABOUT <span>OUR CHOCOLATE</span></h2>
+        <button class="modal-close-btn" data-modal-close>
+          <svg class="modal-close-icon" width="16" height="16">
+            <use href="./images/symbol.svg#icon-closed"></use>
+          </svg>
+        </button>
+        <h2 class="modal-title">
+          LEAVE A REVIEW ABOUT <span>OUR CHOCOLATE</span>
+        </h2>
         <form class="modal-form">
           <div class="modal-input-label">
             <label for="user-name" class="modal-label">Name</label>
-              <div class="icon-wrapper">
-                <input type="text" id="user-name" class="modal-field" name="username">
-                <svg class="modal-input-icon" width="16" height="16">
-                  <use href="./images/symbol.svg#icon-name"></use>
-                </svg>
-              </div>
+            <div class="icon-wrapper">
+              <input
+                type="text"
+                id="user-name"
+                class="modal-field"
+                name="username"
+              />
+              <svg class="modal-input-icon" width="16" height="16">
+                <use href="./images/symbol.svg#icon-name"></use>
+              </svg>
+            </div>
           </div>
           <div class="modal-input-label">
             <label for="user-email" class="modal-label">Email</label>
-              <div class="icon-wrapper">
-                <input type="email" id="user-email" class="modal-field" name="useremail">
-                <svg class="modal-input-icon" width="16" height="16">
-                  <use href="./images/symbol.svg#icon-email"></use>
-                </svg>
-              </div>
+            <div class="icon-wrapper">
+              <input
+                type="email"
+                id="user-email"
+                class="modal-field"
+                name="useremail"
+              />
+              <svg class="modal-input-icon" width="16" height="16">
+                <use href="./images/symbol.svg#icon-email"></use>
+              </svg>
+            </div>
           </div>
           <div class="modal-input-label">
             <label for="user-phone" class="modal-label">Phone number</label>
-             <div class="icon-wrapper">
-              <input type="tel" id="user-phone" class="modal-field" name="userphone">
+            <div class="icon-wrapper">
+              <input
+                type="tel"
+                id="user-phone"
+                class="modal-field"
+                name="userphone"
+              />
               <svg class="modal-input-icon" width="16" height="16">
                 <use href="./images/symbol.svg#icon-phone"></use>
               </svg>
             </div>
           </div>
           <div class="modal-input-label">
-             <label for="user-comment" class="modal-label"></label>
+            <label for="user-comment" class="modal-label"></label>
 
-              <textarea name="comment" id="user-comment" class="modal-textarea" placeholder="Enter text"></textarea>
-
+            <textarea
+              name="comment"
+              id="user-comment"
+              class="modal-textarea"
+              placeholder="Enter text"
+            ></textarea>
           </div>
           <div class="modal-input-label">
-            <input type="checkbox" name="user-pp" id="user-p-policy" class="checkbox visually-hidden" value="true">    
+            <input
+              type="checkbox"
+              name="user-pp"
+              id="user-p-policy"
+              class="checkbox visually-hidden"
+              value="true"
+            />
             <label class="checkbox-label" for="user-p-policy">
               <span class="custom-checkbox">
                 <svg class="checkbox-icon" width="10" height="10">
@@ -564,17 +606,15 @@
                 </svg>
               </span>
 
-              I accept the terms and conditions of the 
-             <a class="pp-link" href=""> Privacy Policy</a>
-
-       
-          </label>
+              I accept the terms and conditions of the
+              <a class="pp-link" href=""> Privacy Policy</a>
+            </label>
           </div>
           <button type="submit" class="modal-send-btn">Send</button>
         </form>
       </div>
     </div>
-     <script src="./js/modal.js"></script>
-     <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
