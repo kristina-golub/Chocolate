@@ -966,11 +966,11 @@ p {
 }
 .modal {
   position: absolute;
-  padding: 72px 16px 24px 16px;
+  padding: 32px 24px;
   top: 50%;
   left: 50%;
-  width: 288px;
-  min-height: 623px;
+  width: 311px;
+  min-height: 619px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background-color: #fcfcfc;
