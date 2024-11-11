@@ -74,10 +74,7 @@ p {
   font-style: italic;
 }
 .logo-icon {
-  stroke-width: 1.8px;
   stroke: #fd9222;
-  fill: transparent;
-  border: none;
 }
 .header-soc-list {
   display: none;
