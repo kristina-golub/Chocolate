@@ -983,17 +983,26 @@ backdrop:not(.is-open) .modal {
 }
 .modal-close-btn {
   position: absolute;
-  top: 14px;
-  right: 14px;
-  border: transparent;
+  width: 28px;
+  height: 28px;
   background-color: transparent;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms ease-in-out, border 250ms ease-in-out;
 }
-.modal-close-btn:hover,
-.modal-close-btn:focus {
-  background-color: #fd9222;
-  fill: #ffffff;
+.header-soc-icon {
+  fill: #111;
+}
+.modal-close-btn:hover {
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid #fd9222;
+}
+.modal-close-btn:hover .modal-close-icon {
+  fill: #fd9222;
 }
 .modal-title {
   max-width: 255px;
@@ -1130,9 +1139,18 @@ input:checked + label > span {
   padding: 12px 28px;
   max-width: 93px;
   height: 41px;
-  border: none;
+  border: transparent;
   margin-top: 32px;
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out,
+    border 250ms ease-in-out;
 }
+.modal-send-btn:hover,
+.modal-send-btn:focus {
+  background: transparent;
+  border: 1px solid #fd9222;
+  color: #fd9222;
+}
+
 @media screen and (min-width: 768px) {
   .modal {
     width: 517px;
