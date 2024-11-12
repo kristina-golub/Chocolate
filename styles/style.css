@@ -125,6 +125,7 @@ p {
   height: 24px;
   background-color: transparent;
   border: none;
+  z-index: 1000;
 }
 .mobile-menu-close-icon {
   fill: #fff;
@@ -162,8 +163,6 @@ p {
 }
 .mob-soc-item {
   display: flex;
-}
-.mob-soc-link {
 }
 .mob-soc-icon {
   fill: transparent;
